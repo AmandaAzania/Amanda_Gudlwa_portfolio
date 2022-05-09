@@ -81,3 +81,10 @@
         margin-right: -1em;   
     }
 }
+
+#about{
+    background-color: rgb(159, 157, 157);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
