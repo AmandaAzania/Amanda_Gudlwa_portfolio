@@ -2,17 +2,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Oleo+Script+Swash+Caps&display=swap');
 
-
+*{
+    padding:0px;
+    margin:0px;
+  }
 
 [class *="profile"] {
     width: 3%;
     /* height: 5em; */
     border-radius: 50%;
     margin-top: 6em;
-    margin-left: 2em;
+    margin-left: 3em;
 }
 
-.display-3{
+.display-4{
     margin-left: -2px;   
 }
 
@@ -20,31 +23,11 @@
     margin-left: -1px;   
 }
 
-/* DEMO-SPECIFIC STYLES */
-.typewriter h1 {
-    color: #fff;
-    font-family: monospace;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(30, end),
-      blink-caret .5s step-end infinite;
-  }
+
   
 
   .other{
     margin-top: 17em;
-  }
-
-  .centered {
-    position: fixed;
-    top: 20%;
-    left: 80%;
-    /* bring your own prefixes */
-    transform: translate(-50%, -50%);
   }
 
   h1{
@@ -78,5 +61,20 @@
     background-size: cover;
     opacity: 0.6;
     background-attachment: fixed;
+
     
 }
+#home img{
+    width: 300px;
+    height: 400px;
+}
+#home .container{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+   background-color:  rgba(172, 8, 8, 0.884);
+  }
