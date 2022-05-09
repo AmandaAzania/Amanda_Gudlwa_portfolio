@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Oleo+Script+Swash+Caps&display=swap');
+
 body{
-    background-image: url("/images/background.gif");
+    background-image: url("/images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.6;
@@ -48,5 +52,14 @@ body{
     left: 80%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
+  }
+
+  h1{
+    font-family: 'Koulen', cursive;
+  }
+
+  h2{
+    font-family: 'Koulen', cursive;
+    font-family: 'Oleo Script Swash Caps', cursive;
   }
 
