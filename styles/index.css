@@ -84,7 +84,30 @@
 
 #about{
     background-color: rgb(159, 157, 157);
-    background-repeat: no-repeat;
-    background-size: cover;
+
   
 }
+
+#resume{
+    background-color: rgb(159, 157, 157);
+}
+
+
+
+.circle {
+    display: inline-block;
+    width: 25px;
+    height: 25p;
+    border: 2px solid #111;
+    background-color: rgb(119, 116, 116);
+    border-radius: 50%;
+    aspect-ratio: 1;
+    transform: translate(-15px, -10px) ;
+
+  }
+
+  .exp {
+     border-left: 1px solid #111;
+
+    
+  }
