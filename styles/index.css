@@ -103,7 +103,7 @@
 #about{
   
     /* min-height: 100vh; */
-    scroll-margin: 4em;
+    scroll-margin: 1em;
 }
 
 
@@ -275,3 +275,4 @@
 .progress-bar{
     background-color: rgba(172, 8, 8, 0.884);
 }
+
