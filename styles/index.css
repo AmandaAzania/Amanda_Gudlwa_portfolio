@@ -286,8 +286,14 @@ h2 {
         font-size: 30px !important;
     }
 
-    
+    /* .second{
+        display: flex;
+        justify-content: center;
+    } */
 }
+
+    
+
 
 .resume-heading {
     font-family: 'Koulen', cursive;
@@ -321,7 +327,7 @@ h2 {
 
 
 .second {
-    /* object-fit: cover; */
-    width: 100%;
-    height: 100%;
+    object-fit: cover;
+    height: fit-content;
+  
 }
