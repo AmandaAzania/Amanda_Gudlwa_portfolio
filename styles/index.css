@@ -61,6 +61,7 @@
 #home img{
     width: 300px;
     height: 300px;
+    object-fit: cover;
 }
 #home .container{
     display: flex;
@@ -104,6 +105,7 @@
   
     /* min-height: 100vh; */
     scroll-margin: 1em;
+    padding-top: 60px;
 }
 
 
@@ -291,4 +293,9 @@
     50%  {background-color:blue; left:200px; top:200px;}
     75%  {background-color:green; left:0px; top:200px;}
     100% {background-color:red; left:0px; top:0px;}
+  }
+
+  .ima{
+      object-fit: cover;
+     height: 100px;
   }
