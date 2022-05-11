@@ -285,6 +285,8 @@ h2 {
     .landing-title {
         font-size: 30px !important;
     }
+
+    
 }
 
 .resume-heading {
@@ -295,6 +297,7 @@ h2 {
 
 #resume {
     margin-top: 100px;
+    margin-left: 1rem;
 }
 
 .progress-bar {
@@ -310,37 +313,6 @@ h2 {
     animation-duration: 4s;
 }
 
-@keyframes example {
-    0% {
-        background-color: red;
-        left: 0px;
-        top: 0px;
-    }
-
-    25% {
-        background-color: yellow;
-        left: 200px;
-        top: 0px;
-    }
-
-    50% {
-        background-color: blue;
-        left: 200px;
-        top: 200px;
-    }
-
-    75% {
-        background-color: green;
-        left: 0px;
-        top: 200px;
-    }
-
-    100% {
-        background-color: red;
-        left: 0px;
-        top: 0px;
-    }
-}
 
 .ima {
     object-fit: cover;
@@ -349,7 +321,7 @@ h2 {
 
 
 .second {
-    object-fit: cover;
+    /* object-fit: cover; */
     width: 100%;
     height: 100%;
 }
