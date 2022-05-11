@@ -140,7 +140,7 @@ h2 {
 }
 
 .circle {
-    width: 15px;
+    width: 5px;
     aspect-ratio: 1 !important;
     height: auto !important;
     border-radius: 50% !important;
