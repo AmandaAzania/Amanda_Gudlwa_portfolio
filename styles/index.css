@@ -336,6 +336,7 @@ h2 {
 .second {
     object-fit: cover;
     height: fit-content;
+    width: fit-content;
   
 }
 
