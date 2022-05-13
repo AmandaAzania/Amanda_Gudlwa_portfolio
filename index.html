@@ -91,8 +91,8 @@
                 <div class="container font-weight-bold">
                     <img src="/images/Amanda (1).JPg" alt="profile" class="profile img-fluid" />
 
-                    <h1 class="display-3 landing-title ">Amanda Gudlwa</h1>
-                    <h2 class="display-6">Aspiring fullstack developer</h2>
+                    <h1 class="display-3 landing-title typewriter ">Amanda Gudlwa</h1>
+                    <h2 class="display-6 fade-in typewriter"> Aspiring <span data-text=" fullstack developer"></span></h2>
                 </div>
             </div>
         </section>
@@ -549,10 +549,10 @@
                                 <div class="staff-details">
                                     <div class="col-md-12 mt-3">
                                         <p>goal app</p>
-                                        <a href="https://github.com/AmandaAzania/calculator"
+                                        <a href="https://github.com/AmandaAzania/goal_tracker"
                                             class="btn btn-primary btn-link text-decoration-none " role="button"><i
                                                 class="bi bi-github"></i></a>
-                                        <a href="https://mellifluous-monstera-b90c34.netlify.app/"
+                                        <a href="https://helpful-lollipop-0e2558.netlify.app/"
                                             class="btn btn-primary btn-link text-decoration-none " role="button"><i
                                                 class="bi bi-globe2"></i></a>
                                     </div>
@@ -695,7 +695,49 @@
 
 
  
+<script>
+    var span = document.querySelector(".typewriter span");
+var textArr = span.getAttribute("data-text").split(", "); 
+var maxTextIndex = textArr.length; 
 
+var sPerChar = 0.15; 
+var sBetweenWord = 1.5;
+var textIndex = 0; 
+
+typing(textIndex, textArr[textIndex]); 
+
+function typing(textIndex, text) {
+    var charIndex = 0; 
+    var maxCharIndex = text.length - 1; 
+    
+    var typeInterval = setInterval(function () {
+        span.innerHTML += text[charIndex]; 
+        if (charIndex == maxCharIndex) {
+            clearInterval(typeInterval);
+            setTimeout(function() { deleting(textIndex, text) }, sBetweenWord * 1000); 
+            
+        } else {
+            charIndex += 1; 
+        }
+    }, sPerChar * 1000); 
+}
+
+function deleting(textIndex, text) {
+    var minCharIndex = 0; 
+    var charIndex = text.length - 1; 
+
+    var typeInterval = setInterval(function () {
+        span.innerHTML = text.substr(0, charIndex); 
+        if (charIndex == minCharIndex) {
+            clearInterval(typeInterval);
+            textIndex + 1 == maxTextIndex ? textIndex = 0 : textIndex += 1; 
+            setTimeout(function() { typing(textIndex, textArr[textIndex]) }, sBetweenWord * 1000); 
+        } else {
+            charIndex -= 1; 
+        }
+    }, sPerChar * 1000); 
+}
+</script>
 
 
     <!-- bootstrap -->
